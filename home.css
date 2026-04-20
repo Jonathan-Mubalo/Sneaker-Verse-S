@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    
+}
+
+
+/* NAV BAR STYLING */
+nav{
+    border: 3px solid rgb(216, 29, 169);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    width: 90%;
+    margin: 5%;
+    background-color: black;
+    color: white;
+}
+
+nav ul{
+    border: 3px solid rgb(54, 151, 50);
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 6vh;
+    margin: 1vh 0;
+}
+
+nav ul a{
+    text-decoration: none;
+    color:white;
+}
+
