@@ -8,7 +8,6 @@
 body{
     overflow-x: hidden;
     width:100%;
-    background-color: black;
     
 }
 
@@ -159,9 +158,9 @@ nav ul a{
 
 .shoes1{
     border: 2px solid red;
-    height:40vh;
+    height:100%;
     width: 26%;
-    margin: 0 10px;
+    margin: 4% 20px;
 }
 
 .picture{
