@@ -224,6 +224,34 @@ nav ul a{
     width: 100%;
 }
 
+.before-hr{
+    border: 2px solid blue;
+    height: 20vh;
+    width: 100vw;
+    margin-top: 2%;
+   display: flex;
+    gap: 10px;
+}
+
+.before-hr div{
+    text-align: center;
+    margin-top: 2%;
+     border: 2px solid black;
+     width: 100%;
+}
+
+.after-hr{
+     border: 2px solid red;
+    display: flex;
+    height: 20vh;
+}
+
+.after-hr div{
+     text-align: center;
+     border: 2px solid black;
+     height: 70%;
+     width: 50%
+}
 
 @media all and (max-width: 880px){
    *{
@@ -253,7 +281,6 @@ nav ul a{
     border: 2px solid blue;
     height: 50px;
 }
-
 
 .shoes1{
     display: grid;
@@ -314,5 +341,14 @@ nav{
 
 }
 
+.before-hr{
+    border: 2px solid blue;
+    height: 300px;
+    width: 60vw;
+    margin-top: 2%;
+    margin-left: 20%;
+   display: grid;
+    gap: 1px;
+}
 
 }
