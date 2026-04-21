@@ -1,44 +1,104 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
-    height: 100%;
-    
+body {
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
 }
-
 
 /* NAV BAR STYLING */
-nav{
-    border: 3px solid red;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 8vh;
-    width: 90%;
-    margin: 5%;
-    background-color: black;
-    color: white;
+nav {
+  border: 3px solid red;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 90%;
+  margin: 5%;
+  background-color: black;
+  color: white;
 }
 
-nav ul{
-    border: 3px solid rgb(54, 151, 50);
-    list-style-type: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    height: 6vh;
-    margin: 1vh 0;
+nav ul {
+  border: 3px solid rgb(54, 151, 50);
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 6vh;
+  margin: 1vh 0;
 }
 
-nav ul a{
-    text-decoration: none;
-    color:white;
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+ /* NEED TO ALIGN THE HEADINGS */
+.customer-information h2, .shipping h2{
+    text-align: center;
+    display: block;
+}
+
+.customer-information {
+  border: 2px solid blue;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+}
+
+.customer-info {
+  border: 2px solid rgb(100, 100, 238);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin: 1% 0%;
+}
+
+.customer-info label{
+    margin-left: 1%;
+}
+
+.customer-info input{
+    margin-right: 1%;
+}
+
+.shipping {
+  border: 2px solid blue;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
+}
+
+.destination {
+  border: 2px solid rgb(100, 100, 238);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin: 1% 0%;
+}
+
+.destination label{
+    margin-left: 1%;
+}
+
+.destination input{
+    margin-right: 1%;
+}
+
+.shipping-method{
+    border: 2px solid rgb(100, 100, 238);
 }
