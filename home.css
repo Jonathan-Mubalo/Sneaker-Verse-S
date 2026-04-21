@@ -7,6 +7,7 @@
 
 body{
     overflow-x: hidden;
+    width:100%;
     
 }
 
@@ -21,13 +22,13 @@ body{
 }
 
 .logo{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 10%;
     height: 80%;
     margin-top: 1%;
 }
 .sneaker{
-     border: 2px solid black;
+     /* border: 2px solid black; */
     width: 40%;
     height: 100%;
     padding-top: 1%;
@@ -52,7 +53,7 @@ nav ul{
     border: 3px solid rgb(54, 151, 50);
     list-style-type: none;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     width: 50%;
@@ -88,16 +89,16 @@ nav ul a{
 .btns{
     display: flex;
     text-align: center;
-     width: 20%;
+     width: 18%;
     border: 2px solid blue;
     height: 55%;
     gap: 10px;
 }
 
 .bt{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
-    width:50%;
+    width:40%;
 }
 
 .paragraph{
@@ -128,7 +129,7 @@ nav ul a{
     border: 2px solid blue;
     padding-top: 0.5%;
     margin: auto;
-    width: 120%;
+    width: 100%;
     height:40px;
 }
 
@@ -146,17 +147,20 @@ nav ul a{
 .shoes{
     border: 2px solid red;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    gap: 5px;
+    /* gap: 30px; */
     margin-top: 2%;
-    height: 80vh;
-    width: 100vw;
+    height: auto;
+    width: 100%;
+    
 }
 
 .shoes1{
     border: 2px solid red;
-    height:60vh;
-    width: 30vw;
+    height:100%;
+    width: 26%;
+    margin: 4% 20px;
 }
 
 .picture{
@@ -211,13 +215,13 @@ nav ul a{
 }
 
 .s{
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .motion{
     display: flex;
     border: 2px solid blue;
-    width: 10%;
+    width: 9%;
     height: 20%;
     margin-top: 2%;
     margin-right: 2%;
@@ -246,10 +250,6 @@ nav ul a{
     text-align: center;
     margin-top: 2%;
      border: 2px solid black;
-}
-
-hr{
-
 }
 
 .after-hr{
