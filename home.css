@@ -232,3 +232,35 @@ nav ul a{
     margin:auto;
     margin-top: 2%;
 }
+
+.before-hr{
+    border: 2px solid red;
+    height: 20vh;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+}
+
+.before-hr div{
+    text-align: center;
+    margin-top: 2%;
+     border: 2px solid black;
+}
+
+hr{
+
+}
+
+.after-hr{
+     border: 2px solid red;
+    display: grid;
+    height: 20vh;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.after-hr div{
+     text-align: center;
+     border: 2px solid black;
+     height: 70%;
+}
