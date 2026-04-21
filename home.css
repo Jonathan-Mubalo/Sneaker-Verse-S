@@ -8,6 +8,7 @@
 body{
     overflow-x: hidden;
     width:100%;
+    background-color: black;
     
 }
 
@@ -212,10 +213,6 @@ nav ul a{
 .mini{
       border: 2px solid blue;
     width: 80%;
-}
-
-.s{
-    /* border: 2px solid black; */
 }
 
 .motion{
