@@ -2,62 +2,53 @@
     margin: 0;
     padding: 0;
      box-sizing: border-box;
-     overflow-y: visible;
-}
-
-body{
     overflow-x: hidden;
-    width:100%;
-    
 }
 
-.heading{
+.top{
     display: flex;
-    gap: 20px; 
+    /* justify-content: space-between; */
     border: 2px solid red;
-    height: 90px;
-    text-align: center;
-    padding-left: 35%;
-    margin-bottom: 2%;
+    height: 15vh;
+    width: 100vw;
 }
 
 .logo{
-    /* border: 2px solid black; */
-    width: 10%;
-    height: 80%;
-    margin-top: 1%;
-}
-.sneaker{
-     /* border: 2px solid black; */
-    width: 40%;
-    height: 100%;
-    padding-top: 1%;
+    border: 2px solid black;
+    height: 70%;
+    width: 15%;
+    margin: auto;
 }
 
-/* NAV BAR STYLING */
+.title{
+    border: 2px solid black;
+    width: 50%;
+}
+
 nav{
     border: 3px solid rgb(216, 29, 169);
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    height: 8vh;
+    height: 10vh;
     width: 90%;
     /* margin: 5%; */
     margin-left: 5%;
     background-color: black;
     color: white;
+    overflow-y: hidden;
 }
 
 nav ul{
     border: 3px solid rgb(54, 151, 50);
+    font-size: smaller;
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 50%;
-    height: 6vh;
+    width: 70%;
+    height: 90%;
     margin: 1vh 0;
 }
 
@@ -75,7 +66,7 @@ nav ul a{
 
 .ontop{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 2px solid black;
     height: 20%;
 }
@@ -89,16 +80,17 @@ nav ul a{
 .btns{
     display: flex;
     text-align: center;
-     width: 18%;
+    margin:auto;
+     width: 20%;
     border: 2px solid blue;
-    height: 55%;
+    height: 70%;
     gap: 10px;
 }
 
 .bt{
-    /* border: 1px solid red; */
+    border: 1px solid blue;
     height: 100%;
-    width:40%;
+    width:100%;
 }
 
 .paragraph{
@@ -128,7 +120,8 @@ nav ul a{
     text-align: center;
     border: 2px solid blue;
     padding-top: 0.5%;
-    margin: auto;
+    margin-top: 15%;
+    margin-right: 10%;
     width: 100%;
     height:40px;
 }
@@ -138,17 +131,13 @@ nav ul a{
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
-}
 
-.but{
-    margin-top: 2%;
 }
 
 .shoes{
     border: 2px solid red;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* gap: 30px; */
     margin-top: 2%;
     height: auto;
@@ -157,28 +146,31 @@ nav ul a{
 }
 
 .shoes1{
-    border: 2px solid red;
+    border: 2px solid yellow;
     height:100%;
     width: 26%;
-    margin: 4% 20px;
+    margin: auto;
+    /* margin: 4% 20px; */
 }
 
 .picture{
      border: 2px solid black;
-     height: 50vh;
+     height: 300px;
 }
 
 .price{
     display: flex;
     gap: 5px;
     border: 2px solid blue;
-    height: 10vh
+    height: 100%;
 }
 
 .num, .cart{
     border: 2px solid black;
     width: 100%;
+    height: 100%;
 }
+
 
 .description{
     border: 2px solid red;
@@ -189,9 +181,10 @@ nav ul a{
     text-align: center;
 }
 
-.employee{
+.employee, .image{
      border: 2px solid red;
-     height: 60vh;
+     height: 40vh;
+     margin: auto;
      margin-top: 2%;
      margin-left: 30%;
      margin-right: 30%;
@@ -200,8 +193,9 @@ nav ul a{
 .promotion{
       border: 2px solid red;
       margin-top: 2%;
-      height: 80vh;
+      height: 60vh;
 }
+
 
 .p{
     display: flex;
@@ -214,53 +208,111 @@ nav ul a{
     width: 80%;
 }
 
-.s{
-    /* border: 2px solid black; */
-}
-
 .motion{
     display: flex;
     border: 2px solid blue;
-    width: 9%;
-    height: 20%;
-    margin-top: 2%;
+    width: 15%;
+    height: 50px;
+    margin-top: 1%;
     margin-right: 2%;
     gap: 5px;
     text-align: center;
 }
 
-.image{
-    border: 2px solid red;
-    height: 50vh;
-    width: 50vw;
-    margin:auto;
-    margin-top: 2%;
+.s{
+    border: 2px solid blue;
+    width: 100%;
 }
 
-.before-hr{
-    border: 2px solid red;
-    height: 20vh;
-    margin-top: 2%;
+
+@media all and (max-width: 880px){
+   *{
+    font-size: medium;
+   }
+   
+    nav ul a{
+        font-size: xx-small;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.topic{
+    font-size: medium;
 }
 
-.before-hr div{
-    text-align: center;
-    margin-top: 2%;
-     border: 2px solid black;
+.shoes{
+    border: 2px solid black;
+    display: grid;
+    flex-direction: column;
+    height: 1180px
 }
 
-.after-hr{
+.price{
+    display: flex;
+    gap: 5px;
+    border: 2px solid blue;
+    height: 50px;
+}
+
+
+.shoes1{
+    display: grid;
+    border: 2px solid red;
+    height:90%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.motion{
+    display: grid;
+    border: 2px solid blue;
+    height: 90px;
+}
+
+.employee, .image{
      border: 2px solid red;
-    display: grid;
-    height: 20vh;
-    grid-template-rows: 1fr 1fr 1fr;
+     height: 30vh;
+     margin-bottom: 2%;
+     width: 50%;
 }
 
-.after-hr div{
-     text-align: center;
-     border: 2px solid black;
-     height: 70%;
+nav ul{
+    border: 3px solid rgb(54, 151, 50);
+    font-size:xx-small;
+    font-weight: 50;
+    list-style-type: none;
+    display: grid;
+    height: 75px;
+}
+
+nav{
+    border: 3px solid rgb(216, 29, 169);
+    display: flex;
+    height: 15vh;
+}
+
+}
+
+
+@media all and (max-width: 500px){
+    .head{
+     margin-right: 50px;
+}
+
+.btns{
+    width: 35%;
+    gap: 1px;
+}
+
+.head{
+    width: 40%
+}
+
+.shop{
+    border: 2px solid red;
+    display: grid;
+
+}
+
+
 }
