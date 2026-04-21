@@ -1,31 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<title></title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="checkout.css">
-<link rel="icon" href="">
-</head>
-<body>
-<header>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="checkout.css" />
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+        <section id="customer-information">
+      <h2>CUSTOMER INFORMATION</h2>
+      <form class="customer-info">
+        <label for="name">CUSTOMER INFO</label>
+        <input type="text" id="name" name="name" required>
+      </form>
+      <form class="customer-info">
+        <label for="email">CUSTOMER INFO</label>
+        <input type="email" id="" name="email" required>
+      </form>
+      <form class="customer-info">
+        <label for="number">CUSTOMER INFO</label>
+        <input type="tel" id="number" name="number"  minlength="10" maxlength="10">
+      </form>
+     </section>
 
-</header>
-<nav>
-
-    <h2>SNEAKER VERSE</h2>
-
-    <ul>
-        <li><a>Slides</a></li>
-        <li><a>Sneakers</a></li>
-        <li><a>Boots</a></li>
-        <li><a>New arrivals</a></li>
-        <li><a>profile icon</a></li>
-        <li><a>cart icon</a></li>
-        <li><a>drop down icon</a></li>
-    </ul>
-   
-</nav>
-
-</body>
+     <section id="shipping">
+      <h2>DELIVERY DESTINATION DETAILS</h2>
+        <form class="destination" action="mailto:mubalokalombejonathan@gmail.com">
+        <label for="">Province</label>
+        <input type="text" id="" name="" required>
+        </form>
+        <form class="destination" action="mailto:mubalokalombejonathan@gmail.com">
+        <label for="">City</label>
+        <input type="text" id="" name="" required>
+        </form>
+        <form class="destination" action="mailto:mubalokalombejonathan@gmail.com">
+        <label for="">Suburb</label>
+        <input type="text" id="" name="" required>
+        </form>
+        <form class="destination" action="mailto:mubalokalombejonathan@gmail.com">
+        <label for="">Postal code</label>
+        <input type="number" id="" name="" required maxlength="4">
+        </form>
+        <form class="destination" action="mailto:mubalokalombejonathan@gmail.com">
+        <label for="">Street address</label>
+        <input type="text" id="" name="" required>
+        </form>
+     </section>
+     <section class="shipping-method">
+      <h2>Shipping method</h2>
+      <div class="method">
+        <p>method</p>
+        <p>Price</p>
+      </div>
+       <div class="method">
+        <p>method</p>
+        <p>Price</p>
+      </div>
+       <div class="method">
+        <p>method</p>
+        <p>Price</p>
+      </div>
+       <div class="method">
+        <p>method</p>
+        <p>Price</p>
+      </div>
+     </section>
+    </main>
+  </body>
 </html>
