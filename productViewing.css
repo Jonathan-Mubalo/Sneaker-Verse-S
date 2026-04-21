@@ -1,44 +1,138 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
-    height: 100%;
-    
+body {
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
 }
-
 
 /* NAV BAR STYLING */
-nav{
-    border: 3px solid red;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 8vh;
-    width: 90%;
-    margin: 5%;
-    background-color: black;
-    color: white;
+nav {
+  border: 3px solid red;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 90%;
+  margin: 5%;
+  background-color: black;
+  color: white;
 }
 
-nav ul{
-    border: 3px solid rgb(54, 151, 50);
-    list-style-type: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    height: 6vh;
-    margin: 1vh 0;
+nav ul {
+  border: 3px solid rgb(54, 151, 50);
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 6vh;
+  margin: 1vh 0;
 }
 
-nav ul a{
-    text-decoration: none;
-    color:white;
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+/* PRODUCT VIEWING */
+
+main {
+  border: 2.5px solid green;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  border: 2.5px solid olive;
+  width: 25%;
+  height: 80vh;
+  margin: 4% 3.5%;
+  text-align: center;
+  padding: 5px;
+}
+
+section div {
+  border: 2px solid olivedrab;
+  width: auto;
+  height: 40%;
+}
+
+form {
+  border: 2.5px solid lightblue;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 2px;
+  height: 10%;
+  align-items: center;
+}
+
+.shoe-size {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: auto;
+}
+
+.shoe-size p{
+  width: 100%;
+}
+
+.shoe-radio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  margin: 2% 0%;
+}
+
+label {
+  width: 20%;
+  height: 3vh;
+  margin: 3% 4%;
+}
+
+.price{
+  border: 2px solid rgb(226, 22, 22);
+   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  /* align-items: center; */
+  height:5%; 
+
+}
+
+.buttons{
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height:auto;
+}
+
+.add-to-cart{
+  padding: 5px;
+  height: 50%;
+  width: 40%;
+  text-align:center;
+  margin-left:3%;
+}
+
+.buy-now{
+  padding: 5px;
+  height: 50%;
+  width: 40%;
+  text-align:center;
+  margin-right:3%;
 }
