@@ -80,3 +80,14 @@ body{
     height: 70%;
 
 }
+
+@media screen and (max-width: 500px){
+    .form{
+   display: flex;
+   margin: auto;
+   margin-top: 5%;
+   border: 2px solid blue;
+   width: 80vw;
+   height: 70vh;
+}
+}
