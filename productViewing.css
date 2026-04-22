@@ -136,3 +136,40 @@ label {
   text-align:center;
   margin-right:3%;
 }
+
+@media screen and (max-width:900px){
+
+  main section{
+      border: 2.5px solid olive;
+  width: 40%;
+  height: 85vh;
+  margin: 4% 3.5%;
+  text-align: center;
+  /* padding: 5px; */
+  }
+}
+
+@media screen and (max-width:550px){
+
+  main section{
+      border: 2.5px solid olive;
+  width: 70%;
+  height: 88vh;
+  margin: 4% auto;
+  text-align: center;
+  /* padding: 5px; */
+  }
+}
+
+@media screen and (max-width:350px){
+
+  main section{
+      border: 2.5px solid olive;
+  width: 85%;
+  height: 81vh;
+  margin: 4% auto;
+  text-align: center;
+  /* padding: 5px; */
+  }
+}
+
