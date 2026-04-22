@@ -7,7 +7,7 @@
 
 .top{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
     border: 2px solid red;
     height: 15vh;
     width: 100vw;
@@ -15,14 +15,14 @@
 
 .logo{
     border: 2px solid black;
-    height: 70%;
+    height: 100%;
     width: 15%;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .title{
     border: 2px solid black;
-    width: 50%;
+    width: 40%;
 }
 
 nav{
@@ -317,6 +317,21 @@ nav{
     display: flex;
     height: 15vh;
 }
+
+
+.logo{
+    border: 2px solid black;
+    height: 80%;
+    width: 25%;
+    margin-top: 3%;
+
+}
+
+.title{
+    border: 2px solid black;
+    width: 60%;
+}
+
 
 }
 
