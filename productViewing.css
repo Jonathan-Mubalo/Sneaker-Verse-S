@@ -8,6 +8,8 @@ body {
   width: 100%;
   overflow-x: hidden;
   height: 100%;
+  background-color: black;
+  color: antiquewhite;
 }
 
 /* NAV BAR STYLING */
@@ -55,7 +57,7 @@ main {
 section {
   border: 2.5px solid olive;
   width: 25%;
-  height: 80vh;
+  height: 84vh;
   margin: 4% 3.5%;
   text-align: center;
   padding: 5px;
@@ -84,7 +86,7 @@ form {
   height: auto;
 }
 
-.shoe-size p{
+.shoe-size p {
   width: 100%;
 }
 
@@ -103,73 +105,256 @@ label {
   margin: 3% 4%;
 }
 
-.price{
+.price {
   border: 2px solid rgb(226, 22, 22);
-   display: flex;
+  display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   /* align-items: center; */
-  height:5%; 
-
+  height: 5%;
 }
 
-.buttons{
+.buttons {
   display: flex;
-  flex-flow:row nowrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  height:auto;
+  height: auto;
 }
 
-.add-to-cart{
+.add-to-cart {
   padding: 5px;
   height: 50%;
   width: 40%;
-  text-align:center;
-  margin-left:3%;
+  text-align: center;
+  margin-left: 3%;
 }
 
-.buy-now{
+.buy-now {
   padding: 5px;
   height: 50%;
   width: 40%;
-  text-align:center;
-  margin-right:3%;
+  text-align: center;
+  margin-right: 3%;
 }
 
-@media screen and (max-width:900px){
+/* IMAGES STYLING */
 
-  main section{
-      border: 2.5px solid olive;
-  width: 40%;
-  height: 85vh;
-  margin: 4% 3.5%;
-  text-align: center;
-  /* padding: 5px; */
+.mypics {
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  background-color: black;
+}
+
+/* IMAGES WITH THEIR PRBLM CLASSES AND ANIMATIONS */
+
+img {
+  height: 90%;
+  width: 120%;
+  margin: auto 2%;
+  border: 4px solid rgb(184, 9, 9);
+  border-radius: 15px;
+  position: relative;
+  animation-name: imagescrolling;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+
+@keyframes imagescrolling {
+  0% {
+    right: -4%;
+  }
+
+  100% {
+    right: 197%;
   }
 }
 
-@media screen and (max-width:550px){
+.prblm1 img {
+  height: 90%;
+  width: 120%;
+  margin: auto 2%;
+  border: 4px solid rgb(184, 9, 9);
+  border-radius: 15px;
+  position: relative;
+  animation-name: problem1;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
 
-  main section{
-      border: 2.5px solid olive;
-  width: 70%;
-  height: 88vh;
-  margin: 4% auto;
-  text-align: center;
-  /* padding: 5px; */
+@keyframes problem1 {
+  0% {
+    right: -4%;
+  }
+
+  100% {
+    right: 187%;
   }
 }
 
-@media screen and (max-width:350px){
+.prblm2 img {
+  height: 90%;
+  width: 120%;
+  margin: auto 2%;
+  border: 4px solid rgb(184, 9, 9);
+  border-radius: 15px;
+  position: relative;
+  animation-name: problem2;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
 
-  main section{
-      border: 2.5px solid olive;
-  width: 85%;
-  height: 81vh;
-  margin: 4% auto;
-  text-align: center;
-  /* padding: 5px; */
+@keyframes problem2 {
+  0% {
+    right: -4%;
+  }
+
+  100% {
+    right: 217%;
   }
 }
 
+.prblm3 img {
+  height: 90%;
+  width: 120%;
+  margin: auto 2%;
+  border: 4px solid rgb(184, 9, 9);
+  border-radius: 15px;
+  position: relative;
+  animation-name: problem3;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+
+@keyframes problem3 {
+  0% {
+    right: -4%;
+  }
+
+  100% {
+    right: 147%;
+  }
+}
+
+.prblm4 img {
+  height: 90%;
+  width: 120%;
+  margin: auto 2%;
+  border: 4px solid rgb(184, 9, 9);
+  border-radius: 15px;
+  position: relative;
+  animation-name: problem4;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+
+@keyframes problem4 {
+  0% {
+    right: -4%;
+  }
+
+  100% {
+    right: 167%;
+  }
+}
+
+.prblm5 img {
+  height: 90%;
+  width: 120%;
+  margin: auto 2%;
+  border: 4px solid rgb(184, 9, 9);
+  border-radius: 15px;
+  position: relative;
+  animation-name: problem5;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+
+@keyframes problem5 {
+  0% {
+    right: -4%;
+  }
+
+  100% {
+    right: 142%;
+  }
+}
+
+.prblm6 img {
+  height: 90%;
+  width: 120%;
+  margin: auto 2%;
+  border: 4px solid rgb(184, 9, 9);
+  border-radius: 15px;
+  position: relative;
+  animation-name: problem6;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+
+@keyframes problem6 {
+  0% {
+    right: -4%;
+  }
+
+  100% {
+    right: 274%; /*SUBTRACTED 16 INSTEAD OF 8 NEXT TIME USE OBJECT FIT AND PUT ALL OF THE IMAGES IN DIVS*/
+  }
+}
+
+/* MY MEDIA QUERRIES */
+@media screen and (max-width: 900px) {
+  main section {
+    border: 2.5px solid olive;
+    width: 40%;
+    height: 95vh;
+    margin: 4% 3.5%;
+    text-align: center;
+    /* padding: 5px; */
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section {
+    border: 2.5px solid olive;
+    width: 70%;
+    height: 96.5vh;
+    margin: 4% auto;
+    text-align: center;
+    /* padding: 5px; */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main section {
+    border: 2.5px solid olive;
+    width: 85%;
+    height: 91vh;
+    margin: 4% auto;
+    text-align: center;
+    padding: 5px;
+  }
+}
