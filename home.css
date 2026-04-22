@@ -253,6 +253,22 @@ nav ul a{
      width: 50%
 }
 
+@media all and (max-width:920px){
+    .logo{
+    border: 2px solid red;
+    height: 80%;
+    width: 15%;
+    margin-top: 1%;
+
+}
+
+.title{
+    border: 2px solid black;
+    width: 60%;
+}
+
+}
+
 @media all and (max-width: 880px){
    *{
     font-size: medium;
@@ -318,12 +334,11 @@ nav{
     height: 15vh;
 }
 
-
 .logo{
-    border: 2px solid black;
+    border: 2px solid blue;
     height: 80%;
-    width: 25%;
-    margin-top: 3%;
+    width: 15%;
+    /* margin-top: 2%; */
 
 }
 
@@ -365,5 +380,20 @@ nav{
    display: grid;
     gap: 1px;
 }
+
+
+.logo{
+    border: 2px solid black;
+    height: 80%;
+    width: 20%;
+    margin-top: 2%;
+
+}
+
+.title{
+    border: 2px solid black;
+    width: 60%;
+}
+
 
 }
