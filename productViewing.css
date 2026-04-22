@@ -42,7 +42,23 @@ nav ul a {
   text-decoration: none;
   color: white;
 }
+/* MY BANNER */
 
+header{
+    width: 65%;
+  height: 100vh;
+  margin:0 auto ;
+}
+header img{
+  width: 100%;
+  height: 100%;
+  animation-name: noanimations;
+  animation-duration: 0s;
+  border: none;
+  border-radius: 0px;
+  margin: 0%;
+  padding: 0%;
+}
 /* PRODUCT VIEWING */
 
 main {
