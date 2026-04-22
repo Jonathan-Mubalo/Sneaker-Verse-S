@@ -5,37 +5,118 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="index.css">
-<link rel="icon" href="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
        <div class="enter">
+         <h1 class="verse">ENTER THE VERSE</h1>
        </div> 
     </header>
 
     <main>
-        <div class="form"> 
-           <div class="input">
-               <div class="sign">Sign In</div>
+        <div class="fill"> 
+           <div class="around">
 
-                <div class="fields first">Name</div>
-                <div class="fields">Surname</div>
-                <div class="fields">Email</div>
-                <div class="fields">Password</div>
-                <div class="fields">Password Confirmation</div>
-                <div class="fields">Phone number</div>
-                <div class="fields">Date of birth</div>
+               <div class="sign">
+                   <h2>SIGN IN</h2>
+               </div>
 
-                <div class="btn"> Sign up</div>
+                <div class="fields first">
+                    <form>
+                        <input type="text" required placeholder="Name">
+                    </form>
+                </div>
+
+                <div class="fields">
+                    <form>
+                        <input type="text" required placeholder="Surname">
+                    </form>
+                </div>
+
+                <div class="fields">
+                    <form>
+                        <input type="email" required placeholder="Email">
+                    </form>
+                </div>
+
+                <div class="fields eyes">
+                    <div>
+                    <form>
+                        <input type="password" value="" id="password" required placeholder="Password">
+                    </form>
+                    </div>
+
+                    <div class="checkbox">
+                         <input type="checkbox" onclick="myFunction()"><p>show/<br>Hide</p>
+                    </div>
+
+                </div>
+
+                <div class="fields eyes">
+                    <div>
+                    <form>
+                        <input type="password" id="confirm" required placeholder="Confirm Password">
+                    </form>
+                    </div>
+
+                     <div class="checkbox">
+                         <input type="checkbox" onclick="anotherFunction()"><p>show/<br>Hide</p>
+                    </div>
+
+                </div>
+
+                <div class="fields">
+                    <form>
+                        <input type="text" required placeholder="Phone Number">
+                    </form>
+                </div>
+
+                <!-- <div class="fields">
+                    <form>
+                        <input type="date" required placeholder="date of birth">
+                    </form>
+                </div> -->
+
+                <div class="btn">
+                    <button><a href="home.html">Sign Up</a></button>
+                </div>
 
                 <div class="options">
-                    <div class="text">Options</div>
-                    <div class="icons">Icons</div>
+                    <div class="text">
+                          <h2>Sign Up Options</h2>
+                    </div>
+                    <div class="icons">
+                        <i class="fa fa-google" style="font-size:24px"></i>
+                        <i class="fa fa-facebook" style="font-size:24px"></i>
+                        <i class="fa fa-apple" style="font-size:24px"></i>
+                        <i class="fa fa-phone" style="font-size:24px"></i>
+                    </div>
                 </div>
            </div>
         </div>
 
     </main>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function anotherFunction() {
+  var x = document.getElementById("confirm");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 
 </body>
 </html>

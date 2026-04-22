@@ -6,69 +6,180 @@
 }
 
 body{
-    overflow-x: hidden;
+    overflow: hidden;
+    background-color: black;
+     color: white;
 }
 
 .enter{
    border: 2px solid red;
    width: 100vw;
-   height: 18vh
+   height: 18vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 300%;
 }
 
-.form{
+.verse{
+    color:transparent;
+    -webkit-text-stroke: 1px red;
+}
+
+.fill{
    display: flex;
    margin: auto;
-   margin-top: 4%;
-   border: 2px solid red;
+   margin-top: 1%;
+   /* border: 2px solid red; */
    width: 30vw;
-   height: 70vh;
+   height: 76vh;
+   border-radius: 40px;
+   box-shadow: 0px 8px 20px 10px rgba(255, 9, 9, 0.2);
 }
 
 .sign{
-     border: 2px solid rgb(9, 255, 255);
-     height:15%;
+     /* border: 2px solid rgb(9, 255, 255); */
+     height:12%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 150%;
+      color:transparent;
+    -webkit-text-stroke: 0.3px rgb(255, 255, 255);
 }
 
 .fields{
-     border: 2px solid red;
-     margin-top: 1%;
-     height: 10%;
+     /* border: 2px solid red; */
+     margin-top: 1.5%;
+     height: 13.5%;
+     border-radius: 10px;
+     text-align: center;
 }
 
-.btn{
-    border: 2px solid blue;
-    width: 40%;
-    height: 10%;
-    margin-top: 2%;
+input{
+    display: block;
+    color: white;
+    outline: 2px solid red;
+    background-color: black;
+    margin-left: 10%;
+    height:100%;
+    width: 80%;
+    padding: 2%;
+}
+
+.eyes{
+    display:flex;
+    justify-content: space-evenly;
+
+}
+
+#password{
+   width: 100%
+}
+
+#confirm{
+     width: 100%
+}
+
+.checkbox{
+    outline: 1px solid rgb(153, 142, 142);
+    background-color: rgb(43, 1, 1);
+    height: 40%;
+    /* width: 10%; */
+    font-size: smaller;
+}
+
+input:valid,:not(){
+    outline: 2px solid green;
+}
+
+img{
+    height: 30px
+}
+
+.btn a{
+     color: red;
+     text-decoration: none;
+}
+
+button{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid red;
+    background-color: black;
+    border-radius: 15px;
+    width: 35%;
+    height: 35px;
     margin-left: 30%;
+    margin-bottom: 2%;
+}
+
+button:hover{
+   transform: scale(1.2);
+   box-shadow: 0px 8px 20px 10px rgba(255, 9, 9, 0.2);
 }
 
 .options{
-    /* border: 2px solid  rgb(9, 255, 255); */
-    height: 45%;
+    height: 40%;
 }
 
 .text{
-    margin-top: 3%;
-    border: 2px solid red;
-    height: 20%;
+    /* border: 2px solid red; */
+    height: 18%;
+    text-align: center;
+}
+
+.text h2{
+    font-size:medium;
+    font-weight: lighter;
+    color: rgb(153, 142, 142);
 }
 
 .icons{
-    border: 2px solid  rgb(9, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(153, 142, 142);
+    /* border: 2px solid  rgb(9, 255, 255); */
     margin-top: 1%;
     height: 42%;
 }
 
-.input{
+.fa-google:hover, .fa-facebook:hover, .fa-apple:hover, .fa-phone:hover{
+    transform: scale(1.5);
+}
+
+.around{
      /* border: 2px solid black; */
     width: 100%;
     height: 70%;
  
 }
 
-@media screen and (max-width: 500px){
-    .form{
+
+@media screen and (max-width: 910px){
+ .verse{
+    color:transparent;
+    -webkit-text-stroke: 0.8px red;
+    font-weight: lighter;
+     font-size: 130%
+}
+
+.sign{
+    font-size: 110%;
+}
+}
+
+
+@media screen and (max-width: 550px){
+.verse{
+    color:transparent;
+    -webkit-text-stroke: 0.5px red;
+      font-size: 100%;
+
+}
+.form{
    display: flex;
    margin: auto;
    margin-top: 5%;
@@ -76,5 +187,34 @@ body{
    width: 80vw;
    height: 70vh;
 }
+.sign{
+    font-size: 60%;
+}
+.checkbox{
+    height: 35%;
+    width: 25%
 }
 
+.checkbox p{
+    font-size: xx-small;
+}
+
+}
+
+
+@media screen and (max-width: 265px){
+    .verse{
+    color:transparent;
+    -webkit-text-stroke: 0.2px red;
+      font-size: 60%
+}
+
+.sign{
+    font-size: 0%;
+}
+.icons{
+    height: 30%;
+    font-size: smaller;
+}
+
+}
