@@ -286,7 +286,7 @@ nav ul a{
     display: grid;
     border: 2px solid red;
     height:90%;
-    width: 50%;
+    width: 80%;
     overflow: hidden;
 }
 
