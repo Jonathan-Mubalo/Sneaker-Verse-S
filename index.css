@@ -12,7 +12,7 @@ body{
 }
 
 .enter{
-   border: 2px solid red;
+   /* border: 2px solid red; */
    width: 100vw;
    height: 18vh;
    display: flex;
@@ -88,7 +88,7 @@ input:not(.ch1){
     height: 55%;
     width: 20%;
     margin-right: 6%;
-    margin-top: 1%;
+    margin-top: 0.3%;
     font-size: medium;
     font-weight: 100;
 }
@@ -202,10 +202,12 @@ button:hover{
     height: 35%;
     width: 25%
 }
-
-.checkbox p{
+.hide{
+    color: white;
     font-size: xx-small;
+    font-weight: 50;
 }
+
 
 }
 
