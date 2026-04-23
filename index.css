@@ -65,6 +65,7 @@ input:not(.ch1){
     height:100%;
     width: 80%;
     padding: 2%;
+    border-radius: 5px;
 }
 
 .eyes{
@@ -77,24 +78,29 @@ input:not(.ch1){
    width: 100%
 }
 
-.checkbox{
+input[type="checkbox"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 2px solid rgb(204, 44, 44);
-    border: 2px solid rgb(87, 80, 80);
+    outline: 2px solid rgba(175, 34, 34, 0.486);
     /* background-color: red; */
-    color: grey;
-    height: 55%;
-    width: 20%;
+    height: 45%;
+    width: 70%;
     margin-right: 6%;
     margin-top: 0.3%;
     font-size: medium;
     font-weight: 100;
+    cursor: pointer;
+    border-radius: 10px;
+        appearance: none;
 }
 
 input:valid,:not(){
     outline: 2px solid green;
+}
+
+input[type="checkbox"]:checked{
+    background-color: red;
 }
 
 .btn a{
@@ -198,16 +204,27 @@ button:hover{
 .sign{
     font-size: 60%;
 }
-.checkbox{
-    height: 35%;
-    width: 25%
+input[type=checkbox]{
+    height: 30%;
+    width: 60%;
+    outline: none;
 }
 .hide{
     color: white;
-    font-size: xx-small;
+    font-size: 6px;
     font-weight: 50;
+    margin-left: 8px;
+}
+.icons{
+  transform: scale(0.7);
 }
 
+.text h2{
+    font-size: 10px;
+}
+input::placeholder{
+ font-size: xx-small;
+}
 
 }
 
