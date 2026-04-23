@@ -40,10 +40,28 @@ nav ul a {
   text-decoration: none;
   color: white;
 }
- /* NEED TO ALIGN THE HEADINGS */
-.customer-information h2, .shipping h2{
-    text-align: center;
-    display: block;
+
+main {
+  width: 75%;
+  margin: 13vh auto 2vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+section {
+  border: 2px solid rgb(106, 12, 150);
+  margin-top: 4vh;
+  width: 100%;
+}
+
+/* NEED TO ALIGN THE HEADINGS */
+
+.customer-information h2,
+.shipping h2 {
+  border: 2px solid blue;
+  text-align: center;
+  display: block;
 }
 
 .customer-information {
@@ -55,7 +73,7 @@ nav ul a {
 }
 
 .customer-info {
-  border: 2px solid rgb(100, 100, 238);
+  border: 2px solid rgb(197, 67, 49);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -64,16 +82,8 @@ nav ul a {
   margin: 1% 0%;
 }
 
-.customer-info label{
-    margin-left: 1%;
-}
-
-.customer-info input{
-    margin-right: 1%;
-}
-
 .shipping {
-  border: 2px solid blue;
+  border: 2px solid rgb(0, 225, 255);
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
@@ -82,7 +92,7 @@ nav ul a {
 }
 
 .destination {
-  border: 2px solid rgb(100, 100, 238);
+  border: 2px solid rgb(224, 238, 100);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -91,14 +101,72 @@ nav ul a {
   margin: 1% 0%;
 }
 
-.destination label{
-    margin-left: 1%;
+label {
+  margin-left: 1%;
 }
 
-.destination input{
-    margin-right: 1%;
+input {
+  margin-right: 1%;
 }
 
-.shipping-method{
-    border: 2px solid rgb(100, 100, 238);
+.shipping-method {
+  border: 2px solid rgb(100, 100, 238);
+}
+
+.method {
+  border: 2px solid rgb(238, 100, 169);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+}
+
+table {
+  width: 100%;
+  border: 2px solid red;
+  border-radius: 25px;
+}
+
+th {
+  border: 2px solid red;
+  text-align: center;
+}
+
+td {
+  border: 2px solid red;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+.pricing {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+}
+
+.amount-description{
+  width: 50%;
+}
+
+.switching{
+  border: 2px solid rgb(72, 255, 0);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 7vh;
+
+}
+
+.switching button{
+  height: 5vh;
 }
