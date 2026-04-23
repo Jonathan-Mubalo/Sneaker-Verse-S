@@ -5,34 +5,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="login.css">
-<link rel="icon" href="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
      <header>
-       <div class="login-text">
+       <div class="enter">
+        <h1 class="verse">Login To Your Account</h1>
        </div> 
     </header>
 
        <main>
         <div class="form"> 
            <div class="input">
-               <div class="welcome"> Welcome</div>
 
-                <div class="fields"> Email</div>
-                <div class="fields"> Password</div>
+               <div class="welcome">
+                     <h2>Welcome Back</h2>
+               </div>
+
+                <div class="fields">
+                 <input class="inputf" type="email" placeholder="Email">
+                </div>
+
+                <div class="eyes">
+                    
+                    <div class="fields">
+                        <input class="inputf" type="password" id="password"  placeholder="Password" required>
+                    </div>
+
+                    <div class="checkbox">
+                         <input class="inputf ch1" type="checkbox" onclick="myFunction()"><h6 class="hide">Show/<br>Hide</h6>
+                    </div>
+                </div>
+
                 
-                <div class="box">checkbox</div>
-                <div class="btn"> Button</div>
-                <div class="signup">No account</div>
+                <div class="box">
+                  <input id="second" type="checkbox"> 
+                  <p>Remember Me</p>
+                </div>
+
+                <div class="btn">
+                    <button><a href="home.html">Login</a></button>
+                </div>
+
+                <div class="signup">
+                   <p>Dont't have an account?<a href="index.html">Sign Up </a></p>
+                </div>
 
                 <div class="options">
-                    <div class="text">Options</div>
-                    <div class="icons"> Icons</div>
+                    <div class="text">
+                         <p>Login Options</p>
+                    </div>
+
+                    <div class="icons"> 
+                        <i class="fa fa-google" style="font-size:24px"></i>
+                        <i class="fa fa-facebook" style="font-size:24px"></i>
+                        <i class="fa fa-apple" style="font-size:24px"></i>
+                        <i class="fa fa-phone" style="font-size:24px"></i>
+                    </div>
                 </div>
            </div>
         </div>
 
     </main>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 
 </body>
 </html>

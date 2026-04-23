@@ -7,6 +7,8 @@
 
 body{
     overflow-x: hidden;
+    background-color: black;
+    color: rgb(158, 154, 154);
 }
 
 .login-text{
@@ -15,63 +17,83 @@ body{
    height: 18vh
 }
 
+.welcome{
+     /* border: 2px solid rgb(9, 255, 255); */
+     height:12%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 150%;
+      color:transparent;
+    -webkit-text-stroke: 0.3px rgb(255, 255, 255);
+}
+
+.enter{
+   /* border: 2px solid red; */
+   width: 100vw;
+   height: 18vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 300%;
+}
+
+.verse{
+    color:transparent;
+    -webkit-text-stroke: 1px red;
+}
+
 .form{
    display: flex;
+   justify-content: center;
    margin-top: 3%;
    margin-left: 35%;
-   border: 2px solid red;
+   outline: 2px solid rgb(78, 13, 13);
+   border-radius: 20px;
    width: 30vw;
    height: 70vh;
+   box-shadow: 0px 8px 20px 10px rgba(255, 9, 9, 0.2);
 }
 
-
-.welcome{
-     border: 2px solid rgb(9, 255, 255);
-     height:23%;
+.inputf{
+    display: block;
+    color: white;
+    outline: 2px solid red;
+    background-color: black;
+    margin-left: 10%;
+    height:80%;
+    width: 80%;
+    padding: 2%;
+    border-radius: 5px;
 }
 
-.fields{
-     border: 2px solid red;
-     margin-top: 1%;
-     height: 15%;
+.ch1{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid  rgba(175, 34, 34, 0.486);
+    /* background-color: red; */
+    height: 35%;
+    width: 70%;
+    margin-top: 20%;
+    margin-left: 50%;
+    font-size: medium;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 10px;
+    appearance: none;
 }
 
-.box{
-    border: 2px solid black;
-    margin-top: 3%;
-    height: 10%;
+.hide{
+    margin-left: 55%;
 }
 
-.btn{
-    border: 2px solid blue;
-    width: 40%;
-    height: 10%;
-    margin-top: 2%;
-    margin-left: 30%;
-    text-align: center;
+input:valid,:not(){
+    outline: 2px solid green;
 }
 
-.signup{
-    border: 2px solid black;
-    margin-top: 5%;
-    height: 8%;
-}
-
-.options{
-    /* border: 2px solid  rgb(9, 255, 255); */
-    height: 45%;
-}
-
-.text{
-    margin-top: 3%;
-    border: 2px solid red;
-    height: 20%;
-}
-
-.icons{
-    border: 2px solid  rgb(9, 255, 255);
-    margin-top: 1%;
-    height: 60%;
+input[type="checkbox"]:not(#ch2):checked{
+    background-color: red;
 }
 
 .input{
@@ -81,13 +103,252 @@ body{
 
 }
 
-@media screen and (max-width: 500px){
-    .form{
-   display: flex;
-   margin: auto;
-   margin-top: 5%;
-   border: 2px solid blue;
-   width: 80vw;
+.eyes{
+    display: flex;
+    justify-content: space-around;
+}
+
+#password{
+    height: 45px;
+    width: 150%;
+    padding-left: 1px;
+}
+
+#password::placeholder{
+    padding-left: 5px;
+}
+
+
+.welcome{
+     /* border: 2px solid rgb(9, 255, 255); */
+     height:23%;
+}
+
+.fields{
+     /* border: 2px solid red; */
+     /* margin-top: 1%; */
+     margin-bottom: 3%;
+     height: 15%;
+}
+
+.box{
+    /* border: 2px solid rgb(255, 0, 0); */
+    height: 10%;
+    display: flex;
+    justify-content:flex-start;
+    gap: 10px;
+    padding-left: 3%;
+    color:rgb(116, 123, 129)
+}
+
+.box p{
+    margin-top: 1%;
+}
+
+#second{
+    appearance: none;
+    outline: 2px solid  rgba(175, 34, 34, 0.486);
+    width: 6%;
+    height: 70%;
+    border-radius: 20px;
+    margin-top: 1%;
+}
+
+button{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid red;
+    background-color: black;
+    border-radius: 15px;
+    width: 25%;
+    height: 50px;
+    margin-left: 38%;
+}
+
+.btn a{
+     color: red;
+     text-decoration: none;
+
+}
+
+button:hover{
+   transform: scale(1.2);
+   box-shadow: 0px 8px 20px 10px rgba(255, 9, 9, 0.2);
+}
+
+.signup{
+    /* border: 2px solid rgb(255, 0, 0); */
+    height: 13%;
+    padding-left: 3%;
+}
+
+.signup a{
+    color: red;
+}
+
+.options{
+    /* border: 2px solid  rgb(9, 255, 255); */
+    height: 45%;
+}
+
+ .text{
+    /* border: 2px solid red; */
+    height: 18%;
+    text-align: center;
+}
+
+.icons{
+     display: flex;
+    justify-content: space-evenly;
+    color: rgb(153, 142, 142);
+    /* border: 2px solid  rgb(9, 255, 255); */
+    margin-top: 1%;
+    height: 42%;
+}
+
+.fa-google:hover, .fa-facebook:hover, .fa-apple:hover, .fa-phone:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 1070px){
+   #password{
+    height: 35px;
+    width: 80%;
+    margin-left: 15%;
+}
+
+}
+
+@media screen and (max-width: 910px){
+ .verse{
+    color:transparent;
+    -webkit-text-stroke: 0.8px red;
+    font-weight: lighter;
+     font-size: 130%
+}
+
+.welcome{
+    font-size: 110%;
+}
+
+input[type="checkbox"]{
+    margin-left: 3%;
+}
+
+.hide{
+     margin-left: 1%;
+     font-size: xx-small;
+     font-weight: 100;
+}
+
+.signup{
+    font-size: small;
+    font-weight: 100;
+}
+
+.icons{
+    margin-top: 40%;
+    height: 42%;
+    font-size: smaller;
+    transform: scale(1);
+}
+
+}
+
+@media screen and (max-width: 550px){
+.verse{
+    color:transparent;
+    -webkit-text-stroke: 0.5px red;
+    font-size: 100%;
+}
+
+.form{
+    height: 50vh;
+}
+
+.welcome{
+    font-size: 60%;
+}
+input::placeholder{
+ font-size: xx-small;
+}
+
+.box{
+    font-size: xx-small;
+}
+
+.box p{
+    margin-top: 8%;
+}
+
+#second{
+    width: 15%;
+    height: 50%;
+    margin-top: 8%;
+}
+
+button{
+    border-radius: 15px;
+    width: 50%;
+    height: 30px;
+    margin-left: 25%;
+}
+
+.signup{
+    height: 23%;
+    padding-top: 5%;
+}
+}
+
+@media screen and (max-width: 265px){
+    .verse{
+    color:transparent;
+    -webkit-text-stroke: 0.2px red;
+      font-size: 40%
+}
+
+.icons{
+    height: 30%;
+    font-size: smaller;
+}
+
+.form{
+   width: 55vw;
    height: 70vh;
 }
+
+body{
+    padding-right: 30%;
+}
+
+.welcome{
+     font-size: 70%;
+}
+}
+
+
+@media screen and (max-width: 910px){
+    .form{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .form{
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .form{
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .form{
+        height: 60vh;
+    }
 }
