@@ -56,7 +56,7 @@ body{
      text-align: center;
 }
 
-input{
+input:not(.ch1){
     display: block;
     color: white;
     outline: 2px solid red;
@@ -73,28 +73,28 @@ input{
 
 }
 
-#password{
+#password, #confirm{
    width: 100%
 }
 
-#confirm{
-     width: 100%
-}
-
 .checkbox{
-    outline: 1px solid rgb(153, 142, 142);
-    background-color: rgb(43, 1, 1);
-    height: 40%;
-    /* width: 10%; */
-    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid rgb(204, 44, 44);
+    border: 2px solid rgb(87, 80, 80);
+    /* background-color: red; */
+    color: grey;
+    height: 55%;
+    width: 20%;
+    margin-right: 6%;
+    margin-top: 1%;
+    font-size: medium;
+    font-weight: 100;
 }
 
 input:valid,:not(){
     outline: 2px solid green;
-}
-
-img{
-    height: 30px
 }
 
 .btn a{
@@ -110,9 +110,9 @@ button{
     border: 2px solid red;
     background-color: black;
     border-radius: 15px;
-    width: 35%;
-    height: 35px;
-    margin-left: 30%;
+    width: 25%;
+    height: 50px;
+    margin-left: 38%;
     margin-bottom: 2%;
 }
 
@@ -157,7 +157,6 @@ button:hover{
  
 }
 
-
 @media screen and (max-width: 910px){
  .verse{
     color:transparent;
@@ -169,6 +168,15 @@ button:hover{
 .sign{
     font-size: 110%;
 }
+
+.hide{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: xx-small;
+    font-weight: 100;
+}
+
 }
 
 
