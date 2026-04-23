@@ -44,16 +44,22 @@ nav ul a {
 main {
   width: 75%;
   margin: 13vh auto 2vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 section {
+  border: 2px solid rgb(106, 12, 150);
   margin-top: 4vh;
+  width: 100%;
 }
 
 /* NEED TO ALIGN THE HEADINGS */
 
 .customer-information h2,
 .shipping h2 {
+  border: 2px solid blue;
   text-align: center;
   display: block;
 }
@@ -67,7 +73,7 @@ section {
 }
 
 .customer-info {
-  border: 2px solid rgb(100, 100, 238);
+  border: 2px solid rgb(197, 67, 49);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -77,7 +83,7 @@ section {
 }
 
 .shipping {
-  border: 2px solid blue;
+  border: 2px solid rgb(0, 225, 255);
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
@@ -86,7 +92,7 @@ section {
 }
 
 .destination {
-  border: 2px solid rgb(100, 100, 238);
+  border: 2px solid rgb(224, 238, 100);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -108,7 +114,7 @@ input {
 }
 
 .method {
-  border: 2px solid rgb(100, 100, 238);
+  border: 2px solid rgb(238, 100, 169);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -139,9 +145,6 @@ td {
   border-collapse: collapse;
 }
 
-/* .prices{
-  width:80%;
-} */
 .pricing {
   display: flex;
   flex-flow: row nowrap;
@@ -151,4 +154,19 @@ td {
 
 .amount-description{
   width: 50%;
+}
+
+.switching{
+  border: 2px solid rgb(72, 255, 0);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 7vh;
+
+}
+
+.switching button{
+  height: 5vh;
 }
