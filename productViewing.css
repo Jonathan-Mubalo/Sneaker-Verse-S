@@ -12,6 +12,10 @@ body {
   color: antiquewhite;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* NAV BAR STYLING */
 nav {
   border: 3px solid red;
@@ -44,62 +48,83 @@ nav ul a {
 }
 /* MY BANNER */
 
-header{
-    width: 65%;
+header {
+  width: 65%;
   height: 100vh;
-  margin:0 auto ;
+  margin: 0 auto;
 }
-header{
+header {
   border: 2px solid red;
+  background-color: black;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height:10vh;
-  position: fixed; 
+  height: 10vh;
+  position: fixed;
   top: 0%;
   left: 0%;
   right: 0%;
+  z-index: 3;
 }
 
-header h1{
-margin-left: 3%;
+header h1 {
+  margin-left: 3%;
+  animation-name: banner;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-direction: normal;
 }
 
- header p{
-margin-right: 3%;
+header p {
+  margin-right: 3%;
+  position: absolute;
+  right: 3%;
+  color: maroon;
+  animation-name: icon;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-direction: normal;
+  transform: scale(2);
 }
 
 /* PRODUCT VIEWING */
 
 main {
-  border: 2.5px solid green;
+  /* border: 2.5px solid green; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 100%;
   height: auto;
-  margin-top:13vh;
+  margin-top: 13vh;
 }
 
 section {
-  border: 2.5px solid olive;
+  border: 5px solid rgb(100, 4, 4);
+  background-color: rgb(29, 28, 28);
+  border-radius: 15px;
+  box-shadow: 0.5px 0.5px 15px 10px red;
   width: 25%;
-  height: 84vh;
-  margin: 4% 3.5%;
+  height: 75vh;
+  margin: 4% 1.5%;
   text-align: center;
   padding: 5px;
 }
 
 section div {
-  border: 2px solid olivedrab;
+  /* border: 2px solid olivedrab; */
   width: auto;
   height: 40%;
 }
 
 form {
-  border: 2.5px solid lightblue;
+  /* border: 2.5px solid lightblue; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -119,13 +144,22 @@ form {
   width: 100%;
 }
 
-.shoe-radio {
+/* .shoe-radio {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 100%;
   height: auto;
-  margin: 2% 0%;
+  margin: 0.5% 0%;
+} */
+
+.shoe-radio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  width:90%;
 }
 
 label {
@@ -135,7 +169,7 @@ label {
 }
 
 .price {
-  border: 2px solid rgb(226, 22, 22);
+  /* border: 2px solid rgb(226, 22, 22); */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -192,6 +226,34 @@ img {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-delay: 1s;
+}
+
+@keyframes banner {
+  0% {
+    color: black;
+  }
+
+  30% {
+    color: black;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+@keyframes icon {
+  0% {
+    right: 98%;
+  }
+
+  100% {
+    right: 5%;
+  }
 }
 
 @keyframes imagescrolling {
@@ -355,34 +417,160 @@ img {
 }
 
 /* MY MEDIA QUERRIES */
+
 @media screen and (max-width: 900px) {
   main section {
-    border: 2.5px solid olive;
+    /* border: 2.5px solid olive; */
     width: 40%;
-    height: 95vh;
+    height: 77vh;
     margin: 4% 3.5%;
     text-align: center;
+    /* padding: 5px 0px;  */
+  }
+
+  .buy-now,
+  .add-to-cart {
+    width: 30%;
+    height: 40%;
+  }
+
+  .buy-now {
+    margin-right: 6.5%;
+  }
+
+  .add-to-cart {
+    margin-left: 6.5%;
+  }
+
+  @keyframes banner {
+    0% {
+      color: black;
+    }
+
+    40% {
+      color: black;
+    }
+
+    50% {
+      color: white;
+    }
+
+    100% {
+      color: red;
+    }
+  }
+
+  @keyframes icon {
+    0% {
+      right: 98%;
+    }
+
+    100% {
+      right: 5%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main section {
+    /* border: 2.5px solid olive; */
+    width: 60%;
+    height: 82vh;
+    margin: 9% auto;
+    text-align: center;
     /* padding: 5px; */
+  }
+
+  @keyframes banner {
+    0% {
+      color: black;
+    }
+
+    55% {
+      color: black;
+    }
+
+    70% {
+      color: white;
+    }
+
+    100% {
+      color: red;
+    }
+  }
+
+  @keyframes icon {
+    0% {
+      right: 98%;
+    }
+
+    100% {
+      right: 5%;
+    }
   }
 }
 
 @media screen and (max-width: 550px) {
   main section {
-    border: 2.5px solid olive;
-    width: 70%;
-    height: 96.5vh;
-    margin: 4% auto;
+    /* border: 2.5px solid olive; */
+    width: 60%;
+    height: 82vh;
+    margin: 9% auto;
     text-align: center;
     /* padding: 5px; */
+  }
+
+  @keyframes banner {
+    0% {
+      color: black;
+    }
+
+    10% {
+      color: black;
+    }
+
+    20% {
+      color: white;
+    }
+
+    70% {
+      color: red;
+    }
+
+    100% {
+      color: maroon;
+    }
+  }
+
+  @keyframes icon {
+    0% {
+      color: black;
+    }
+
+    10% {
+      color: black;
+    }
+
+    20% {
+      color: white;
+    }
+
+    70% {
+      color: red;
+    }
+
+    100% {
+      color: maroon;
+    }
   }
 }
 
 @media screen and (max-width: 350px) {
   main section {
-    border: 2.5px solid olive;
-    width: 85%;
+    /* border: 2.5px solid olive; */
+    width: 75%;
     height: 91vh;
-    margin: 4% auto;
+    margin: 9% auto;
     text-align: center;
     padding: 5px;
   }
