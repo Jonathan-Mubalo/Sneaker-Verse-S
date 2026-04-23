@@ -40,10 +40,22 @@ nav ul a {
   text-decoration: none;
   color: white;
 }
- /* NEED TO ALIGN THE HEADINGS */
-.customer-information h2, .shipping h2{
-    text-align: center;
-    display: block;
+
+main {
+  width: 75%;
+  margin: 13vh auto 2vh;
+}
+
+section {
+  margin-top: 4vh;
+}
+
+/* NEED TO ALIGN THE HEADINGS */
+
+.customer-information h2,
+.shipping h2 {
+  text-align: center;
+  display: block;
 }
 
 .customer-information {
@@ -62,14 +74,6 @@ nav ul a {
   width: 100%;
   height: auto;
   margin: 1% 0%;
-}
-
-.customer-info label{
-    margin-left: 1%;
-}
-
-.customer-info input{
-    margin-right: 1%;
 }
 
 .shipping {
@@ -91,14 +95,60 @@ nav ul a {
   margin: 1% 0%;
 }
 
-.destination label{
-    margin-left: 1%;
+label {
+  margin-left: 1%;
 }
 
-.destination input{
-    margin-right: 1%;
+input {
+  margin-right: 1%;
 }
 
-.shipping-method{
-    border: 2px solid rgb(100, 100, 238);
+.shipping-method {
+  border: 2px solid rgb(100, 100, 238);
+}
+
+.method {
+  border: 2px solid rgb(100, 100, 238);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+}
+
+table {
+  width: 100%;
+  border: 2px solid red;
+  border-radius: 25px;
+}
+
+th {
+  border: 2px solid red;
+  text-align: center;
+}
+
+td {
+  border: 2px solid red;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+/* .prices{
+  width:80%;
+} */
+.pricing {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+}
+
+.amount-description{
+  width: 50%;
 }
