@@ -5,48 +5,82 @@
     overflow-x: hidden;
 }
 
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.topic{
+    margin-left: 2%;
+}
+
 .top{
     display: flex;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 15vh;
     width: 100vw;
 }
 
 .logo{
-    border: 2px solid black;
+    /* border: 2px solid blue; */
     height: 100%;
-    width: 15%;
-    /* margin: auto; */
+    width: 10%;
+     overflow-y: hidden;
+}
+
+svg:not(.bag){
+    height: 30%;
+    width: 70%;
+    color:  rgb(128, 2, 2);
+}
+
+.bag{
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+}
+
+.pics{
+    display: flex;
 }
 
 .title{
-    border: 2px solid black;
+    /* border: 2px solid rgb(255, 7, 201); */
     width: 40%;
-}
-
-nav{
-    border: 3px solid rgb(216, 29, 169);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    width: 90%;
-    /* margin: 5%; */
-    margin-left: 5%;
-    background-color: black;
-    color: white;
     overflow-y: hidden;
 }
 
+.sneak{
+    font-size: 500%;
+    margin-left: 5%;
+    color:transparent;
+    -webkit-text-stroke: 1px red;
+
+}
+
+nav{
+    border: 3px solid rgb(68, 2, 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 5%;
+    color: white;
+    overflow-y: hidden;
+    box-shadow: 0px 8px 20px 10px rgba(255, 9, 9, 0.2);
+}
+
 nav ul{
-    border: 3px solid rgb(54, 151, 50);
-    font-size: smaller;
-    list-style-type: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    /* border: 3px solid rgb(54, 151, 50); */
+    font-size: medium;
+    list-style-type: none;
     width: 70%;
     height: 90%;
     margin: 1vh 0;
@@ -56,48 +90,85 @@ nav ul a{
     text-decoration: none;
     color:white;
 }
-
 .banner{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-top: 5%;
     height: 60vh;
     width: 100vw;
 }
 
+video{
+   object-fit: cover;
+    width: 100%;
+    height: 100%
+}
+
+.all:not(.paragraph){
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 43%;
+    width: 100%;
+    height: 52%
+}
+
 .ontop{
     display: flex;
     justify-content: space-around;
-    border: 2px solid black;
+    /* border: 2px solid rgb(145, 255, 0); */
     height: 20%;
 }
 
-.head{
-     border: 2px solid red;
-    height: 100%;
-    width: 30%
+.turn{
+    font-size: 50px;
 }
 
 .btns{
     display: flex;
     text-align: center;
     margin:auto;
-     width: 20%;
-    border: 2px solid blue;
+    margin-left: 75%;
+    width: 20%;
+    /* border: 2px solid blue; */
     height: 70%;
     gap: 10px;
 }
 
-.bt{
-    border: 1px solid blue;
-    height: 100%;
-    width:100%;
+button{
+    width: 100%;
+     border-radius: 15px;
+     background-color: red;
+     color: white
 }
 
 .paragraph{
-    border: 2px solid red;
-    height: 50%;
+    /* border: 2px solid red; */
+    height: 75%;
     width: 40%;
-    margin-top: 3%;
+    margin-left: 1.5%;
+}
+
+.summer{
+    font-size: x-large;
+    width: 100%;
+    margin-top: 5%;
+    animation-name: moveLeftToRight;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+   0% {
+    transform: translateX(-80%);
+  }
 }
 
 .browse, .our{
@@ -117,25 +188,20 @@ nav ul a{
 }
 
 .now{
-    text-align: center;
-    border: 2px solid blue;
-    padding-top: 0.5%;
-    margin-top: 15%;
-    margin-right: 10%;
-    width: 100%;
-    height:40px;
+    width: 10%;
+    height: 50px;
+    margin: 20px 0px
 }
 
 .shop{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
-
 }
 
 .shoes{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     /* justify-content: space-around; */
     /* gap: 30px; */
@@ -146,7 +212,8 @@ nav ul a{
 }
 
 .shoes1{
-    border: 2px solid yellow;
+    display: grid;
+    /* border: 2px solid yellow; */
     height:100%;
     width: 26%;
     margin: auto;
@@ -154,27 +221,54 @@ nav ul a{
 }
 
 .picture{
-     border: 2px solid black;
+     /* border: 2px solid blue; */
      height: 300px;
+}
+
+.picture h2{
+    margin-top: 1%;
+}
+
+img:not(.pro){
+    margin-top: 3%;
+    height: 85%;
+    width: 100%
 }
 
 .price{
     display: flex;
     gap: 5px;
-    border: 2px solid blue;
-    height: 100%;
+    /* border: 2px solid blue; */
+    height: 50px;
 }
 
-.num, .cart{
-    border: 2px solid black;
+.num{
+    /* border: 2px solid black; */
     width: 100%;
     height: 100%;
 }
 
+.pro{
+    height: 98%;
+    width: 100%
+}
+
+.cart{
+    margin-top: 1%;
+      width: 50%;
+    height: 80%;
+}
 
 .description{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-top: 2%;
+    margin-left: 6%;
+}
+
+.makes{
+    /* border: 2px solid red; */
+    display: grid;
+    justify-content: flex-start;
 }
 
 .diff{
@@ -182,7 +276,7 @@ nav ul a{
 }
 
 .employee, .image{
-     border: 2px solid red;
+     /* border: 2px solid red; */
      height: 40vh;
      margin: auto;
      margin-top: 2%;
@@ -191,26 +285,32 @@ nav ul a{
 }
 
 .promotion{
-      border: 2px solid red;
+      /* border: 2px solid red; */
       margin-top: 2%;
       height: 60vh;
 }
 
+#off{
+    font-size: x-large;
+    color: red;
+}
 
 .p{
     display: flex;
     justify-content: space-between;
-
 }
 
 .mini{
-      border: 2px solid blue;
+      /* border: 2px solid blue; */
+      display: grid;
+      justify-content: left;
     width: 80%;
+    margin-left: 8%;
 }
 
 .motion{
     display: flex;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 15%;
     height: 50px;
     margin-top: 1%;
@@ -219,43 +319,69 @@ nav ul a{
     text-align: center;
 }
 
-.s{
-    border: 2px solid blue;
-    width: 100%;
+footer{
+    background-color: rgb(46, 1, 1);
 }
 
 .before-hr{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 20vh;
     width: 100vw;
-    margin-top: 2%;
    display: flex;
     gap: 10px;
 }
 
 .before-hr div{
     text-align: center;
-    margin-top: 2%;
-     border: 2px solid black;
+     /* border: 2px solid red; */
      width: 100%;
 }
 
+a:not(.links){
+    display: block;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.links{
+      display: block;
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.mail{
+    display: block;
+    width: 50%;
+    margin-left: 20%;
+    font-size: smaller;
+}
+
+.update{
+    display: grid;
+    justify-content: center;
+    gap: 5px
+}
+
+hr{
+    margin: 20px 0px;   
+}
+
 .after-hr{
-     border: 2px solid red;
+     /* border: 2px solid red; */
     display: flex;
-    height: 20vh;
 }
 
 .after-hr div{
      text-align: center;
-     border: 2px solid black;
-     height: 70%;
+     /* border: 2px solid red; */
      width: 50%
 }
 
 @media all and (max-width:920px){
     .logo{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 80%;
     width: 15%;
     margin-top: 1%;
@@ -263,7 +389,7 @@ nav ul a{
 }
 
 .title{
-    border: 2px solid black;
+    /* border: 2px solid blue; */
     width: 60%;
 }
 
@@ -271,13 +397,35 @@ nav ul a{
 
 @media all and (max-width: 880px){
    *{
-    font-size: medium;
+    font-size: small;
    }
-   
-    nav ul a{
-        font-size: xx-small;
+
+.sneak{
+    font-size: 400%;
+    font-weight: 100;
+}
+
+.now{
+    font-size: small;
+    width: 20%
+}
+
+.paragraph{
+    width: 50%;
+    height: 65%
+}
+
+.pics{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    width: 155px;
+}
+
+nav ul a{
+    font-size: xx-small;
+    font-weight: 100;
     display: grid;
-    flex-direction: column;
     flex-wrap: wrap;
 }
 .topic{
@@ -285,7 +433,7 @@ nav ul a{
 }
 
 .shoes{
-    border: 2px solid black;
+    /* border: 2px solid blue; */
     display: grid;
     flex-direction: column;
     height: 1180px
@@ -294,13 +442,13 @@ nav ul a{
 .price{
     display: flex;
     gap: 5px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 50px;
 }
 
 .shoes1{
     display: grid;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height:90%;
     width: 80%;
     overflow: hidden;
@@ -308,34 +456,32 @@ nav ul a{
 
 .motion{
     display: grid;
-    border: 2px solid blue;
     height: 90px;
 }
 
 .employee, .image{
-     border: 2px solid red;
+     /* border: 2px solid red; */
      height: 30vh;
      margin-bottom: 2%;
      width: 50%;
 }
 
 nav ul{
-    border: 3px solid rgb(54, 151, 50);
-    font-size:xx-small;
-    font-weight: 50;
+    /* border: 3px solid rgb(54, 151, 50); */
     list-style-type: none;
-    display: grid;
+    display: flex;
     height: 75px;
+    overflow-y: hidden;
 }
 
 nav{
-    border: 3px solid rgb(216, 29, 169);
+    /* border: 3px solid rgb(216, 29, 169); */
     display: flex;
     height: 15vh;
 }
 
 .logo{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 80%;
     width: 15%;
     /* margin-top: 2%; */
@@ -343,17 +489,61 @@ nav{
 }
 
 .title{
-    border: 2px solid black;
+    /* border: 2px solid blue; */
     width: 60%;
 }
 
-
 }
 
-
 @media all and (max-width: 500px){
+    *{
+        font-size: x-small;
+    }
+
     .head{
      margin-right: 50px;
+}
+
+.pics{
+    margin-top: 0px;
+    margin-bottom: 6px;
+    width: 155px;
+}
+
+.paragraph{
+    font-size: small;
+    width: 85%;
+    height: 60%
+}
+.turn{
+    font-size: 40px;
+}
+
+.title{
+    /* border: 2px solid pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.sneak{
+    font-size: 180%;
+    font-weight: 100;
+}
+
+nav{
+        /* border: 2px solid yellow; */
+        height: 110px;
+        width: 300px;
+        margin: auto;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 1.5%;
+        /* border: 2px solid red; */
+        height: 100px;
+        overflow-y: hidden;
 }
 
 .btns{
@@ -361,39 +551,55 @@ nav{
     gap: 1px;
 }
 
+.op{
+    height: 82%;
+}
+
+.no{
+    height: 85%;
+    width: 100%;
+}
+
 .head{
     width: 40%
 }
 
 .shop{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: grid;
+}
 
+.now{
+    width: 100%
 }
 
 .before-hr{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 300px;
     width: 60vw;
     margin-top: 2%;
     margin-left: 20%;
    display: grid;
-    gap: 1px;
 }
 
+.update input, button{
+    height: 15px;
+    width: 100px;
+}
 
 .logo{
-    border: 2px solid black;
+    /* border: 2px solid blue; */
     height: 80%;
     width: 20%;
     margin-top: 2%;
 
 }
 
-.title{
-    border: 2px solid black;
-    width: 60%;
+a:not(.links){
+    display: block;
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
 }
-
 
 }
