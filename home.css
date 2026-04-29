@@ -5,6 +5,88 @@
     overflow-x: hidden;
 }
 
+.wrapper{
+    width: 90%;
+    height: 100vh;
+}
+
+.wrapper-inner{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 70vh;
+    overflow-y: hidden;
+}
+
+.slide{
+    /* border: 2px solid rgb(234, 0, 255); */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.slide .image{
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide .bg-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.slide .bg-info h1{
+    overflow-y: hidden;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.slide .bg-info button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 30px;
+    color: black;
+    border: none;
+    width: 15%;
+    height: 10%;
+    background: white;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow-y: hidden;
+}
+
+.wrapper .swiper-pagination-bullet{
+    height: 10px;
+    width: 10px;
+    background: red;
+    opacity: 0.5s;
+    transition: 0.3s;
+}
+
+.wrapper .swiper-pagination-bullet-active{
+    width: 20px;
+    opacity: 1;
+    border-radius: 7px;
+}
+
 body{
     background-color: black;
     color: rgb(255, 255, 255);
@@ -109,6 +191,7 @@ button:hover{
     margin-top: 5%;
     height: 60vh;
     width: 100vw;
+    overflow-y: hidden;
 }
 
 video{
@@ -187,16 +270,10 @@ button{
 
 .browse, .our{
     margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 45px;
     text-align: center;
 }
-
-.swipers{
-     border: 2px solid red;
-    margin-top: 2%;
-    height: 60vh;
-    width: 100vw;
-}
-
 
 .discover{
     text-align:center;
@@ -265,7 +342,7 @@ img:not(.pro){
 
 .pro{
     height: 98%;
-    width: 100%
+    width: 90%;
 }
 
 .cart{
@@ -411,6 +488,11 @@ hr{
     width: 60%;
 }
 
+.wrapper{
+    width: 90%;
+    height: 60vh;
+}
+
 }
 
 @media all and (max-width: 880px){
@@ -542,11 +624,11 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 70%;
 }
 .sneak{
-    font-size: 180%;
-    font-weight: 100;
+    font-size: 39px;
+    font-weight: 0;
 }
 
 nav{
@@ -565,12 +647,11 @@ nav ul{
 }
 
 .btns{
-    width: 35%;
-    gap: 1px;
+    gap: 0px;
 }
 
 .op{
-    height: 82%;
+    height: 85%;
 }
 
 .no{
@@ -618,6 +699,33 @@ a:not(.links){
     line-height: 20px;
     color: white;
     text-decoration: none;
+}
+
+.slide .bg-info h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+.slide .bg-info button{
+    width: 15%;
+    height: 10%;
+    background: white;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.wrapper{
+    width: 90%;
+    height: 55vh;
+}
+
+.browse, .our{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 25px;
+    text-align: center;
 }
 
 }
