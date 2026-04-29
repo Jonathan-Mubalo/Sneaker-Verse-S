@@ -6,6 +6,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- This is for the swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -74,7 +76,7 @@
          <div class="ontop">
             <div class="btns">
                 <button class="op"><a href="productViewing.html">Shop</a></button>
-                <button class="op"><a href="productViewing.html">ShopKids</a></button>
+                <button class="op up"><a href="productViewing.html">ShopKids</a></button>
             </div>
          </div>
 
@@ -91,8 +93,41 @@
 
    <section>
           <h1 id="scroll" class="browse"> Browse The Sneaker Verse </h1>
+           <a href="productViewing.html">
+           <div class="wrapper swiper">
+               <div class="wrapper-inner swiper-wrapper">
+                  <div class="slide swiper-slide">
+                      <img src="images/apersonwearingnikedunk.jpg" alt="nikedunk" class="image">
+                      <div class="bg-info">
+                        <h1>Sneakers</h1>
+                        <button class="start">Shop Now</button>
+                      </div>
+                    </div>
 
-        <div class="swipers"></div>
+                    <!-- second image of slider -->
+                    <div class="slide swiper-slide">
+                      <img src="images/personwearingslide.jpg" alt="airjordans" class="image">
+                      <div class="bg-info">
+                        <h1>Slides</h1>
+                        <button class="start">Shop Now</button>
+                      </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                      <img src="images/timberlandboot.jpg" alt="airjordans" class="image">
+                      <div class="bg-info">
+                        <h1>Boots</h1>
+                        <button class="start">Shop Now</button>
+                      </div>
+                    </div>
+               </div>
+
+                  <!-- Paging through -->
+             <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+           </div>
+           </a>
           
       <div class="shop">
            <div>
@@ -123,7 +158,7 @@
         <div class="shoes1">
             <div class="picture">
                 <h2>Adidas ultraboost 22</h2>
-                <img src="images/ultraboost2.jpg">
+                <img src="images/ultraboost3.jpg">
             </div>
 
             <div class="price">
@@ -227,12 +262,14 @@
                <a class="links" href="">Refund and Return Policy</a>
             </div>
             <div>
-                <p>Copyright &copy; 2026 SneakerVerse all rights reserved<br>Fransheska and Johnathan</p>
+                <p>Copyright &copy; 2026 SneakerVerse all rights reserved<br>Fransheska <br>and<br>Johnathan</p>
             </div>
         </div>
 
   </footer>
-
+   <!-- swiper js script -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <script src="home.js"></script>
 
 </body>
 </html>
