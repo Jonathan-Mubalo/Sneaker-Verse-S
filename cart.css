@@ -64,6 +64,11 @@ header h2 {
 header p {
   border: 2px solid green;
   margin-right: 4%;
+  width: 40px;
+  height:40px;
+  
+color: maroon;
+
   /* height: 100%; */
 }
 
@@ -176,3 +181,8 @@ button{
   height: 8vh;
   margin: 2% 0.5%;
 }
+
+
+
+
+
