@@ -588,6 +588,15 @@ a{
 header p {
   display: none;
 }
+
+  main section {
+    /* border: 2.5px solid olive; */
+    width: 90%;
+    height: 91vh;
+    margin: 9% auto;
+    text-align: center;
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 350px) {
