@@ -8,10 +8,9 @@ body {
   width: 100%;
   overflow-x: hidden;
   height: 100%;
-  background-color:black;
+  background-color: black;
   color: white;
 }
-
 
 /* BANNER STYLING */
 
@@ -34,7 +33,7 @@ header {
 header h1 {
   margin-left: 4%;
   /* height: 100%; */
-     animation-name: banner;
+  animation-name: banner;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
@@ -44,13 +43,13 @@ header h1 {
 
 header p {
   margin-right: 4%;
-   position: absolute;
+  position: absolute;
   right: 4%;
   width: 40px;
   height: 40px;
   margin-bottom: 2%;
   color: maroon;
-animation-name: icon;
+  animation-name: icon;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
@@ -59,19 +58,20 @@ animation-name: icon;
 }
 
 /* FORM STYLING */
-main{
+main {
   margin-top: 24vh;
 }
 
 /* INPUT FIELDS ONLY */
 
-input{
+input {
   border: 2.5px solid maroon;
   background-color: rgb(77, 75, 75);
-border-radius: 20px;
-height: 4vh;}
+  border-radius: 20px;
+  height: 4vh;
+}
 
-  label {
+label {
   margin-left: 1.5%;
 }
 
@@ -79,20 +79,17 @@ input {
   margin-right: 1.5%;
 }
 
-input[type="radio"]{
+input[type="radio"] {
   vertical-align: middle;
 }
 
-/* section {
-  border: 2px solid rgb(106, 12, 150);
-  margin-top: 4vh;
-  width: 100%;
-} */
 /* STYLE TACKLING ALL OF THE CONTAINERS */
-#customer-information, #shipping, #shipping-method{
-width: 60%;
-margin: 8% auto;
- border: 5px solid rgb(100, 4, 4);
+#customer-information,
+#shipping,
+#shipping-method {
+  width: 60%;
+  margin: 8% auto;
+  border: 5px solid rgb(100, 4, 4);
   background-color: rgb(29, 28, 28);
   border-radius: 15px;
   box-shadow: 0.5px 0.5px 15px 10px red;
@@ -102,15 +99,14 @@ margin: 8% auto;
 /* NEED TO ALIGN THE HEADINGS */
 
 #customer-information h2,
-#shipping h2, #shipping-method h2 {
-  border: 2px solid blue;
+#shipping h2,
+#shipping-method h2 {
   text-align: center;
   display: block;
 }
 
 /* THE FORM CONTAINERS */
 #customer-information {
-  border: 2px solid blue;
   display: flex;
   flex-flow: column nowrap;
   /* width: 100%; */
@@ -118,7 +114,6 @@ margin: 8% auto;
 }
 
 .customer-info {
-  border: 2px solid rgb(197, 67, 49);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -129,7 +124,6 @@ margin: 8% auto;
 }
 
 #shipping {
-  border: 2px solid rgb(0, 225, 255);
   display: flex;
   flex-flow: column nowrap;
   /* width: 100%; */
@@ -138,7 +132,6 @@ margin: 8% auto;
 }
 
 .destination {
-  border: 2px solid rgb(224, 238, 100);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -149,11 +142,9 @@ margin: 8% auto;
 }
 
 .shipping-method {
-  border: 2px solid rgb(100, 100, 238);
 }
 
 .method {
-  border: 2px solid rgb(238, 100, 169);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -186,30 +177,33 @@ td {
   border-collapse: collapse;
 }
 
+.prices {
+  width: 40%;
+  height: auto;
+  margin: 2% auto;
+}
 .pricing {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   margin: 1.5% auto;
-
 }
 
-.amount-description{
+.amount-description {
   width: 50%;
 }
 
-.switching{
-  border: 2px solid rgb(72, 255, 0);
+.switching {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   width: 50%;
   height: 7vh;
-margin: 0% auto;
+  margin: 0% auto;
 }
 
-.switching button{
+.switching button {
   height: 5vh;
 }
 
@@ -290,7 +284,6 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-
   @keyframes banner {
     0% {
       color: black;
@@ -321,55 +314,60 @@ a {
 }
 
 @media screen and (max-width: 550px) {
-/* TACKLING BODY CONTAINERSSSS */
-#customer-information, #shipping, #shipping-method{
-width: 80%;
-margin: 8% auto;
- border: 5px solid rgb(100, 4, 4);
-  background-color: rgb(29, 28, 28);
-  border-radius: 15px;
-  box-shadow: 0.5px 0.5px 15px 10px red;
-  border-radius: 15px;
-}
+  .prices {
+    width: 100%;
+  }
+  /* TACKLING BODY CONTAINERSSSS */
+  #customer-information,
+  #shipping,
+  #shipping-method {
+    width: 80%;
+    margin: 8% auto;
+    border: 5px solid rgb(100, 4, 4);
+    background-color: rgb(29, 28, 28);
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 15px 10px red;
+    border-radius: 15px;
+  }
 
-/* TACKLING FORMS */
-  .method, .destination, .customer-info{
+  /* TACKLING FORMS */
+  .method,
+  .destination,
+  .customer-info {
     flex-flow: column nowrap;
     justify-content: center;
     height: 15vh;
   }
 
-    label {
-  margin-left: 0%;
-  margin-bottom: 1.5%;
-}
+  label {
+    margin-left: 0%;
+    margin-bottom: 1.5%;
+  }
 
-input {
-  margin-right: 0%;
-}
+  input {
+    margin-right: 0%;
+  }
 
-/* TACKLING BUTTONS AT THE BOTTOM */
-.switching{
-  border: 2px solid rgb(72, 255, 0);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  height: auto;
-margin: 0% auto;
-}
+  /* TACKLING BUTTONS AT THE BOTTOM */
+  .switching {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: 0% auto;
+  }
 
-.switching button {
-  border-radius: 20px;
-  width: 70%;
-  height: 5vh;
-  margin: 2% 0.5%;
-  border: 5px solid rgb(100, 4, 4);
-  background-color: rgb(29, 28, 28);
-  color: white;
-}
-
+  .switching button {
+    border-radius: 20px;
+    width: 70%;
+    height: 5vh;
+    margin: 2% 0.5%;
+    border: 5px solid rgb(100, 4, 4);
+    background-color: rgb(29, 28, 28);
+    color: white;
+  }
 
   @keyframes banner {
     0% {
@@ -415,5 +413,3 @@ margin: 0% auto;
     }
   }
 }
-
-
