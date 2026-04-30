@@ -16,36 +16,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* NAV BAR STYLING */
-nav {
-  border: 3px solid red;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 8vh;
-  width: 90%;
-  margin: 5%;
-  background-color: black;
-  color: white;
-}
-
-nav ul {
-  border: 3px solid rgb(54, 151, 50);
-  list-style-type: none;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
-  height: 6vh;
-  margin: 1vh 0;
-}
-
-nav ul a {
-  text-decoration: none;
-  color: white;
-}
 /* MY BANNER */
 
 header {
@@ -226,6 +196,43 @@ img {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-delay: 1s;
+}
+
+/* BUTTONS TO CHANGE PAGES */
+
+button {
+  border-radius: 20px;
+  width: 40%;
+  height: 5vh;
+  margin: 2% 0.5%;
+  border: 5px solid rgb(100, 4, 4);
+  background-color: rgb(29, 28, 28);
+  color: white ;
+
+}
+
+.button3{
+   
+  display: flex;
+  flex-flow: ro nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width:30%;
+  height: 10vh;
+  margin:2% auto;
+}
+
+button2{
+  
+  width: 50%;
+  height: 8vh;
+  margin: 2% 0.5%;
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
 
 @keyframes banner {
