@@ -518,6 +518,12 @@ a{
 }
 
 @media screen and (max-width: 550px) {
+
+  header {
+  display: flex;
+  flex-flow: row wrap;
+  }
+
   main section {
     /* border: 2.5px solid olive; */
     width: 60%;
@@ -578,6 +584,11 @@ a{
 }
 
 @media screen and (max-width: 350px) {
+
+header p {
+  display: none;
+}
+  
   main section {
     /* border: 2.5px solid olive; */
     width: 90%;
