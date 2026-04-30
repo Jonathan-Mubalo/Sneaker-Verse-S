@@ -527,6 +527,11 @@ a{
     /* padding: 5px; */
   }
 
+  button{
+    width: 100% !important;
+    height: auto;
+  }
+
   @keyframes banner {
     0% {
       color: black;
