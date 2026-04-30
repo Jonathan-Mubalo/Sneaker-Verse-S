@@ -580,7 +580,7 @@ a{
 @media screen and (max-width: 350px) {
   main section {
     /* border: 2.5px solid olive; */
-    width: 75%;
+    width: 90%;
     height: 91vh;
     margin: 9% auto;
     text-align: center;
