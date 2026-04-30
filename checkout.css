@@ -60,7 +60,7 @@ animation-name: icon;
 
 /* FORM STYLING */
 main{
-  margin-top: 14vh;
+  margin-top: 24vh;
 }
 
 /* INPUT FIELDS ONLY */
@@ -70,6 +70,7 @@ input{
   background-color: rgb(77, 75, 75);
 border-radius: 20px;
 height: 4vh;}
+
   label {
   margin-left: 1.5%;
 }
@@ -78,6 +79,9 @@ input {
   margin-right: 1.5%;
 }
 
+input[type="radio"]{
+  vertical-align: middle;
+}
 
 /* section {
   border: 2px solid rgb(106, 12, 150);
@@ -202,11 +206,29 @@ td {
   align-items: center;
   width: 50%;
   height: 7vh;
-
+margin: 0% auto;
 }
 
 .switching button{
   height: 5vh;
+}
+
+/* TACKLING BUTTONS */
+
+button {
+  border-radius: 20px;
+  width: 40%;
+  height: 5vh;
+  margin: 2% 0.5%;
+  border: 5px solid rgb(100, 4, 4);
+  background-color: rgb(29, 28, 28);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
 
 @keyframes banner {
@@ -299,6 +321,55 @@ td {
 }
 
 @media screen and (max-width: 550px) {
+/* TACKLING BODY CONTAINERSSSS */
+#customer-information, #shipping, #shipping-method{
+width: 80%;
+margin: 8% auto;
+ border: 5px solid rgb(100, 4, 4);
+  background-color: rgb(29, 28, 28);
+  border-radius: 15px;
+  box-shadow: 0.5px 0.5px 15px 10px red;
+  border-radius: 15px;
+}
+
+/* TACKLING FORMS */
+  .method, .destination, .customer-info{
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 15vh;
+  }
+
+    label {
+  margin-left: 0%;
+  margin-bottom: 1.5%;
+}
+
+input {
+  margin-right: 0%;
+}
+
+/* TACKLING BUTTONS AT THE BOTTOM */
+.switching{
+  border: 2px solid rgb(72, 255, 0);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: auto;
+margin: 0% auto;
+}
+
+.switching button {
+  border-radius: 20px;
+  width: 70%;
+  height: 5vh;
+  margin: 2% 0.5%;
+  border: 5px solid rgb(100, 4, 4);
+  background-color: rgb(29, 28, 28);
+  color: white;
+}
+
 
   @keyframes banner {
     0% {
