@@ -187,6 +187,12 @@ button:hover{
 
 
 @media screen and (max-width: 550px){
+
+    .fill{
+        width: 85%;
+        margin:auto;
+    }
+    
 .verse{
     color:transparent;
     -webkit-text-stroke: 0.5px red;
